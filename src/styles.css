@@ -1,0 +1,140 @@
+/* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    margin: 0 auto;
+}
+
+html{
+    margin: 0;
+    background: url('./assets/img/bg.png') left 80px no-repeat;
+    width: 100%;
+    height: calc(100% - 80px);
+    background-size: cover;
+    overflow: hidden;
+}
+
+header{
+    margin-top: 10px;
+    min-height: 80px;
+    border-bottom: 1px solid #993399;
+}
+
+nav a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, .7);
+}
+
+.fl{
+    float: left;
+}
+
+.fr{
+    float: right;
+}
+
+.clearfix:before,
+.clearfix:after{
+    content: "";
+    display: table;
+}
+
+.clearfix:after{
+    clear: both;
+}
+
+nav ul{
+    margin-top: 13px;
+}
+
+.nav-links{
+    padding: 4px 8px;
+    border: 1px solid #993399;
+    color: #000;
+    margin-left: 8px;
+    transition: .2s ease-in all;
+}
+
+.nav-links.active{
+    background-color: rgba(255, 255, 255, 0.8); 
+}
+
+.nav-links:hover{
+    color: #fff;
+    background-color: #993399;
+}
+
+header .wrapper{
+    padding-top: 12px;
+}
+
+.post.wrapper{
+    height: 100%;
+    overflow: auto;
+    width: 50%;
+    font-size: 14px;
+    line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(75, 72, 72);
+}
+
+.post.wrapper ul{
+    padding: 20px;
+    list-style-type: none;
+    margin: 0;
+    max-height: 600px;
+}
+
+.post.wrapper li{
+    margin-top: 20px;
+}
+
+.post.wrapper li:first-child{
+    margin-top: 0;
+}
+.thumbnail{
+    display: block;
+    width: 100%;
+    background: #ccc;
+    height: 200px;
+}
+
+.post.wrapper p{
+    margin: 8px 0;
+}
+
+.post.wrapper input{
+    padding: 8px;
+    color: rgb(75, 72, 72);
+    border-radius: 4px;
+    width: calc(100% - 90px);
+    border: 1px solid #ccc;
+}
+
+.post.wrapper button{
+    background-color: #993399;
+    color: #fff;
+    border: 1px solid #491f49;
+    padding: 7px 10px;
+    margin-top: 1px;
+    border-radius: 2px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.post{
+    padding-bottom: 15px;
+}
